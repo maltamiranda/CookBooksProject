@@ -1,0 +1,34 @@
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Caja.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Form1.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Properties.Resources.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\bin\Debug\ProyectoH+V.exe
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\bin\Debug\ProyectoH+V.pdb
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH+V.exe
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH+V.pdb
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.CrearProducto.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.BuscarProducto.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarProducto.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarLote.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarCantidad.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH+V.exe
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH+V.pdb
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\bin\Debug\ProyectoH+V.exe
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\bin\Debug\ProyectoH+V.pdb
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Caja.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarCantidad.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarLote.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarProducto.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.BuscarProducto.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.CrearProducto.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Form1.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Properties.Resources.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\ProyectoH+V(Sin base2)\ProyectoH+V\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH+V.exe
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH+V.pdb

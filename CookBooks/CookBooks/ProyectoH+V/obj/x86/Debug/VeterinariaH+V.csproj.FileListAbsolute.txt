@@ -1,0 +1,36 @@
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH+V.exe
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH+V.pdb
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Caja.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarCantidad.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarLote.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarProducto.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.BuscarProducto.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.CrearProducto.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Form1.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Properties.Resources.resources
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\bin\Debug\ProyectoH+V.exe
+C:\Documents and Settings\Mariano\Escritorio\Mariano\UNAJ\6º Cuatrimestre (2013)\Proyecto de software\VeterinariaH+V\ProyectoH+V\bin\Debug\ProyectoH+V.pdb
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Caja.resources
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito.resources
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarLote.resources
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Form1.resources
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Properties.Resources.resources
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\VeterinariaH+V.csproj.GenerateResource.Cache
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\bin\Debug\ProyectoH+V.exe
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\bin\Debug\ProyectoH+V.pdb
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH+V.exe
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH+V.pdb
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\VeterinariaH+V.csprojResolveAssemblyReference.cache
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\VeterinariaH+V.csprojFakesResolveAssemblyReference.cache
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\bin\Debug\MySql.Data.Fakes.fakesconfig
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\bin\Debug\MySql.Data.Fakes.dll
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\bin\Debug\MySql.Data.Fakes.xml
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.agregarLibro.resources
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\obj\x86\Debug\ProyectoH_V.Deposito1.CrearLibro.resources
+C:\Users\Mariano\Desktop\Mariano\UNAJ\CookBooks\VeterinariaH+V\ProyectoH+V\bin\Debug\MySql.Data.dll
