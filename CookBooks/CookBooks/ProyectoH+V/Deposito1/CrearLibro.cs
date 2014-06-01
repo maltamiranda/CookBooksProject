@@ -12,8 +12,10 @@ namespace CookBooks.Deposito1
 {
     public partial class CrearLibro : Form
     {
-        public GestorLibros gestorLibros;
-        public Deposito deposito;
+        private GestorLibros gestorLibros;
+        private Deposito deposito;
+        private List<String> autores = new List<String>();
+
 
         public CrearLibro(GestorLibros gestorLibros, Deposito deposito)
         {
@@ -23,6 +25,10 @@ namespace CookBooks.Deposito1
         }
 
         
+        public void agregarAutores(String autor)
+        {
+            autores.Add(autor);
+        }
 
         private void aceptar_Click(object sender, EventArgs e)
         {
@@ -76,6 +82,11 @@ namespace CookBooks.Deposito1
         private void temaBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void crearAutor_Click(object sender, EventArgs e)
+        {
+            new CrearAutor(gestorLibros).Show();
         }
     }
 }

@@ -166,8 +166,9 @@
             this.crearAutor.TabIndex = 15;
             this.crearAutor.Text = "CrearAutor";
             this.crearAutor.UseVisualStyleBackColor = false;
+            this.crearAutor.Click += new System.EventHandler(this.crearAutor_Click);
             // 
-            // CrearProducto
+            // CrearLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,7 +188,7 @@
             this.Controls.Add(this.cantidadBox);
             this.Controls.Add(this.nombreBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "CrearProducto";
+            this.Name = "CrearLibro";
             this.Text = "CrearProducto";
             this.Load += new System.EventHandler(this.CrearLibro_Load);
             this.ResumeLayout(false);

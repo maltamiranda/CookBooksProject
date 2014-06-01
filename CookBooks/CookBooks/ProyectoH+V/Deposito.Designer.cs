@@ -35,13 +35,6 @@
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.actualizar = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.movimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historico = new System.Windows.Forms.Button();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tema = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +42,13 @@
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.actualizar = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.movimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eliminar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -121,6 +121,44 @@
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Tema
+            // 
+            this.Tema.HeaderText = "Tema";
+            this.Tema.Name = "Tema";
+            this.Tema.Width = 120;
+            // 
+            // Autor
+            // 
+            this.Autor.HeaderText = "Autor";
+            this.Autor.Name = "Autor";
+            // 
+            // Editorial
+            // 
+            this.Editorial.HeaderText = "Editorial";
+            this.Editorial.Name = "Editorial";
+            this.Editorial.Width = 150;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // fechaIngreso
+            // 
+            this.fechaIngreso.HeaderText = "Fecha Ingreso";
+            this.fechaIngreso.Name = "fechaIngreso";
+            this.fechaIngreso.Width = 150;
+            // 
             // actualizar
             // 
             this.actualizar.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -174,56 +212,18 @@
             this.fechaHora.Name = "fechaHora";
             this.fechaHora.Width = 150;
             // 
-            // historico
+            // eliminar
             // 
-            this.historico.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.historico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.historico.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.historico.Location = new System.Drawing.Point(26, 91);
-            this.historico.Name = "historico";
-            this.historico.Size = new System.Drawing.Size(75, 23);
-            this.historico.TabIndex = 4;
-            this.historico.Text = "Historial";
-            this.historico.UseVisualStyleBackColor = false;
-            this.historico.Click += new System.EventHandler(this.historico_Click);
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Tema
-            // 
-            this.Tema.HeaderText = "Tema";
-            this.Tema.Name = "Tema";
-            this.Tema.Width = 120;
-            // 
-            // Autor
-            // 
-            this.Autor.HeaderText = "Autor";
-            this.Autor.Name = "Autor";
-            // 
-            // Editorial
-            // 
-            this.Editorial.HeaderText = "Editorial";
-            this.Editorial.Name = "Editorial";
-            this.Editorial.Width = 150;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // fechaIngreso
-            // 
-            this.fechaIngreso.HeaderText = "Fecha Ingreso";
-            this.fechaIngreso.Name = "fechaIngreso";
-            this.fechaIngreso.Width = 150;
+            this.eliminar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eliminar.Location = new System.Drawing.Point(26, 91);
+            this.eliminar.Name = "eliminar";
+            this.eliminar.Size = new System.Drawing.Size(75, 23);
+            this.eliminar.TabIndex = 4;
+            this.eliminar.Text = "Eliminar";
+            this.eliminar.UseVisualStyleBackColor = false;
+            this.eliminar.Click += new System.EventHandler(this.eliminar_Click);
             // 
             // Deposito
             // 
@@ -232,7 +232,7 @@
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1332, 661);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.historico);
+            this.Controls.Add(this.eliminar);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.actualizar);
             this.Controls.Add(this.menuStrip1);
@@ -259,7 +259,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button actualizar;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button historico;
+        private System.Windows.Forms.Button eliminar;
         private System.Windows.Forms.DataGridViewTextBoxColumn movimiento;
         private System.Windows.Forms.DataGridViewTextBoxColumn cant;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuario;

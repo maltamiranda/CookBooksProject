@@ -13,6 +13,7 @@ namespace CookBooks.Deposito1
         private int precio;
         private int cantidad = 0;
         private DateTime fecha_ingreso = new DateTime();
+        public List<Autor> autores = new List<Autor>();
 
 
         public Libro(String nombre, String tema, String editorial, int precio, int cantidad, DateTime fecha_ingreso)
@@ -23,6 +24,12 @@ namespace CookBooks.Deposito1
             this.precio = precio;
             this.cantidad = cantidad;
             this.fecha_ingreso = fecha_ingreso;
+        }
+
+
+        public void agregarAutor(String nombre, String apellido, String nacionalidad)
+        {
+            autores.Add(new Autor(nombre, apellido, nacionalidad));
         }
 
 

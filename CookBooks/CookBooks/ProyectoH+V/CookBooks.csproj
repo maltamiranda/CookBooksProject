@@ -93,6 +93,13 @@
     <Compile Include="Deposito1\agregarLote.Designer.cs">
       <DependentUpon>agregarLote.cs</DependentUpon>
     </Compile>
+    <Compile Include="Deposito1\Autor.cs" />
+    <Compile Include="Deposito1\CrearAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposito1\CrearAutor.Designer.cs">
+      <DependentUpon>CrearAutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Deposito1\CrearLibro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Deposito1\agregarLote.resx">
       <DependentUpon>agregarLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposito1\CrearAutor.resx">
+      <DependentUpon>CrearAutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Deposito1\CrearLibro.resx">
       <DependentUpon>CrearLibro.cs</DependentUpon>

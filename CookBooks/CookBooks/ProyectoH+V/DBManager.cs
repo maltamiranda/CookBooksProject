@@ -82,6 +82,12 @@ namespace CookBooks
             this.ejecutarQuery(Query);    
         }
 
+        public void crearAutor(String nombre, String apellido, String nacionalidad)
+        {
+            String Query = "INSERT INTO `cookbooks`.`autores` (`nombre`, `apellido`, `nacionalidad`) VALUES ('" + nombre + "','" + apellido + "','" + nacionalidad  + "')";
+            this.ejecutarQuery(Query);
+        }
+
 
         public DateTime obtenerFechaIngreso(int id_Libro)
         {
@@ -201,9 +207,13 @@ namespace CookBooks
 
         public void eliminarLibro(String nombre)
         {
-            String Query = "DELETE FROM `cookbooks`.`libros` WHERE nombre=" + nombre + ";";
+            int id = obteneridLibro(nombre);
+            String Query = "DELETE FROM `cookbooks`.`libros` WHERE idlibros=" + id + ";";
+            String Query2 = "DELETE FROM `cookbooks`.`libro_autor` WHERE idLibro=" + id + ";";
+            this.ejecutarQuery(Query2);
             this.ejecutarQuery(Query);
         }
+
 
         /*public void reservarButaca(int id_butaca, int reserva_id, int id_sala)
         {

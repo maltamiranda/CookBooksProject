@@ -81,20 +81,14 @@ namespace CookBooks
         {
         }
 
-        private void historico_Click(object sender, EventArgs e)
+        private void eliminar_Click(object sender, EventArgs e)
         {
-            dataGridView2.BringToFront();
-            dataGridView2.Show();
-            List<HStock> historicos = GestorHStock.getHistoricos();
-            dataGridView2.Rows.Clear();
+            String celda = (String)dataGridView1.CurrentRow.Cells["Nombre"].Value;
 
-            if (historicos != null)
-            {
-                foreach (HStock historico in historicos)
-                {
-                    dataGridView2.Rows.Add(historico.getMovimiento(), historico.getCantidad(), historico.getUsuario(), historico.getFechaHora());
-                }
-            }
+            DBManager conexionBase = new DBManager(gestorLibros);
+            conexionBase.inicilizar();
+            conexionBase.eliminarLibro("'" + celda + "'");
+            gestorLibros.eliminarLibro(celda);
         }
     }
 }
