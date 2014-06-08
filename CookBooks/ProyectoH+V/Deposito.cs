@@ -22,6 +22,7 @@ namespace CookBooks
             InitializeComponent();
             this.gestorLibros = gestorLibros;
             this.gestorAutores = gestorAutores;
+            this.actualizarFilas();
         }
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,6 +92,7 @@ namespace CookBooks
             conexionBase.inicilizar();
             conexionBase.eliminarLibro("'" + celda + "'");
             gestorLibros.eliminarLibro(celda);
+            this.actualizarFilas();
         }
     }
 }
