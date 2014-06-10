@@ -92,5 +92,10 @@ namespace CookBooks
             conexionBase.eliminarLibro("'" + celda + "'");
             gestorLibros.eliminarLibro(celda);
         }
+
+        private void nuevoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new CrearAutor(gestorAutores, this).Show(); ;
+        }
     }
 }

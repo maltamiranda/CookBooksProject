@@ -25,6 +25,16 @@ namespace CookBooks.Deposito1
             this.gestorAutores = gestorAutores;
             this.gestorLibros = gestorLibros;
             this.deposito = deposito;
+
+            List<Autor> autores = gestorAutores.getAutores();
+
+            if (autores != null)
+            {
+                foreach (Autor autor in autores)
+                {
+                    comboBox1.Items.Add(autor.getApellido() + " " + autor.getNombre());
+                }
+            }
         }
 
         
@@ -90,6 +100,11 @@ namespace CookBooks.Deposito1
         private void crearAutor_Click(object sender, EventArgs e)
         {
             new CrearAutor(gestorAutores, deposito).Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

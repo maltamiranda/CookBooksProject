@@ -57,3 +57,19 @@ C:\Users\Administrador\Desktop\CookBooks\CookBooks\ProyectoH+V\obj\x86\Debug\Coo
 C:\Users\Administrador\Desktop\CookBooks\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.csproj.GenerateResource.Cache
 C:\Users\Administrador\Desktop\CookBooksProyect3\CookBooksProject\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.exe
 C:\Users\Administrador\Desktop\CookBooksProyect3\CookBooksProject\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.pdb
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.exe
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.pdb
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\bin\Debug\CookBooks.exe
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\bin\Debug\CookBooks.pdb
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\bin\Debug\MySql.Data.Fakes.xml
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.csprojResolveAssemblyReference.cache
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Caja.resources
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito.resources
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.agregarLibro.resources
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.agregarLote.resources
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.CrearAutor.resources
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.CrearLibro.resources
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Form1.resources
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Properties.Resources.resources
+C:\Users\maltamiranda\Documents\GIT Ing Soft II\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.csproj.GenerateResource.Cache
