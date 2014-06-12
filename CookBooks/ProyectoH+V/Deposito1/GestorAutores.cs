@@ -10,6 +10,7 @@ namespace CookBooks.Deposito1
     {
         public List<Autor> Autores = new List<Autor>();
         public List<Autor> AutoresBuscados = new List<Autor>();
+        private Autor autorBuscado;
 
         public List<Autor> getAutores()
         {
@@ -19,6 +20,35 @@ namespace CookBooks.Deposito1
         public void borrarAutores()
         {
             Autores = null;
+        }
+
+        public void eliminarAutor(String nombre, String apellido, String nacionalidad)
+        {
+            for (int i = 0; i < Autores.Count; i++)
+            {
+                if (Autores[i].getNombre() == nombre && Autores[i].getApellido() == apellido && Autores[i].getNacionalidad() == nacionalidad)
+                {
+                    Autores.RemoveAt(i);
+                    i--;
+                }
+            }
+        }
+
+        public Autor buscarAutor(String nombre, String apellido, String nacionalidad)
+        {
+            
+            
+            
+            foreach (Autor autor in Autores)
+            {
+                
+                if (autor.getNombre() == nombre & autor.getApellido() == apellido & autor.getNacionalidad() == nacionalidad)
+                {
+                    autorBuscado = autor;
+                    
+                }
+            }
+            return autorBuscado; ;
         }
 
         /*

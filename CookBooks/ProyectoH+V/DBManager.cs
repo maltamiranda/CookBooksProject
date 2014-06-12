@@ -24,6 +24,7 @@ namespace CookBooks
         int cantidadLibro;
         int idLibros;
         int ultimoIdLibro;
+        int idAutor;
         String nombreLibro;
         String temaLibro;
         String editorialLibro;
@@ -269,6 +270,21 @@ namespace CookBooks
             return idLibros;
         }
 
+        public int obteneridAutor(String nombre, String apellido, String nacionalidad)
+        {
+            String Query = "SELECT `idautor` FROM `autores` WHERE nombre= '" + nombre + 
+                "' AND apellido='" + apellido + "' AND nacionalidad='" + nacionalidad + "';";
+            conexion.Open();
+            MySqlCommand cmd = new MySqlCommand(Query, conexion);
+            rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                idAutor = rdr.GetInt32(0);
+            }
+            conexion.Close();
+            return idAutor;
+        }
+
 
         public int generaridlibro()
         {
@@ -295,11 +311,24 @@ namespace CookBooks
             this.ejecutarQuery(Query);
         }
 
+        public void eliminarAutor(int id)
+        {
+            String Query = "DELETE FROM autores WHERE idautor=" + id + ";";
+            this.ejecutarQuery(Query);
+        }
+
         public void modificarLibro(String nombre, String tema, String editorial, int precio, int cantidad, int id)
         {
             String Query = "UPDATE `cookbooks`.`libros` SET `nombre`= '" + nombre + "',`tema`='" + tema + "',`editorial`='" + editorial + "',`precio`=" + precio + ",`cantidad`=" + cantidad + " WHERE `idlibros` =" + id + ";";
             this.ejecutarQuery(Query);
 
+        }
+
+        public void modificarAutor(String nombre, String apellido, String nacionalidad, int id)
+        {
+            String Query = "UPDATE autores SET nombre='" + nombre + "', apellido='" + apellido +
+                "', nacionalidad='" + nacionalidad + "' WHERE idautor=" + id + ";";
+            this.ejecutarQuery(Query);
         }
 
 

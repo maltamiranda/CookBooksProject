@@ -18,6 +18,13 @@ namespace CookBooks.Deposito1
             this.nacionalidad = nacionalidad;
         }
 
+        public void modificarAutor(String nombre, String apellido, String nacionalidad)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.nacionalidad = nacionalidad;
+        }
+
         public String getNombre()
         {
             return nombre;

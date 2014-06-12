@@ -125,5 +125,15 @@ namespace CookBooks
             modificarLibro.mostrarDatos(celda, tema, editorial, precio, cantidad);
             modificarLibro.Show();
         }
+
+        private void nuevoAutorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new CrearAutor(gestorAutores, this).Show();
+        }
+
+        private void modificarAutorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ModificarAutor(gestorAutores, gestorLibros, this).Show();
+        }
     }
 }
