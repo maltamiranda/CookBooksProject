@@ -67,7 +67,7 @@ namespace CookBooks
             List<int> totalIdLibros = obtenerIdLibros();
             foreach (int id in totalIdLibros)
             {
-                gestorLibros.crearLibro(obtenerNombreLibro(id), obtenerTemaLibro(id), obtenerEditorialLibro(id), obtenerPrecioLibro(id), obtenerCantidadLibro(id), obtenerFechaIngreso(id));
+                gestorLibros.crearLibro(obtenerNombreLibro(id), obtenerTemaLibro(id), new Autor("","",""), obtenerEditorialLibro(id), obtenerPrecioLibro(id), obtenerCantidadLibro(id), obtenerFechaIngreso(id));
             }
         }
 

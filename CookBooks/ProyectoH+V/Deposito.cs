@@ -52,7 +52,7 @@ namespace CookBooks
             {
                 foreach (Libro libro in librosInternos)
                 {
-                    dataGridView1.Rows.Add(libro.getNombre(), libro.getTema(), autor, libro.getEditorial(), libro.getPrecio(), libro.getCantidad(), libro.getFechaIngreso());
+                    dataGridView1.Rows.Add(libro.getNombre(), libro.getTema(), libro.getAutor().getApellido(), libro.getEditorial(), libro.getPrecio(), libro.getCantidad(), libro.getFechaIngreso());
                 }
             }
 

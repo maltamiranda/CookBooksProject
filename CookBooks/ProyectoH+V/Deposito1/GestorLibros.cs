@@ -49,17 +49,17 @@ namespace CookBooks.Deposito1
             }
         }
 
-        public void crearLibro(String nombre, String tema, String editorial, int precio, int cantidad)
+        public void crearLibro(String nombre, String tema, Autor autor, String editorial, int precio, int cantidad)
         {
             DateTime fechaIngreso = DateTime.Now;
             //DateTime vencimiento = new DateTime(2014, 12, 4);*/
-            this.crearLibro(nombre, tema, editorial, precio, cantidad, fechaIngreso);
+            this.crearLibro(nombre, tema, autor, editorial, precio, cantidad, fechaIngreso);
         }
 
-        public void crearLibro(String nombre, String tema, String editorial, int precio, int cantidad, DateTime fechaIngreso)
+        public void crearLibro(String nombre, String tema, Autor autor, String editorial, int precio, int cantidad, DateTime fechaIngreso)
         {
             //DateTime vencimiento = new DateTime(2014, 12, 4);*/
-            Libros.Add(new Libro(nombre, tema, editorial, precio, cantidad, fechaIngreso));
+            Libros.Add(new Libro(nombre, tema, autor, editorial, precio, cantidad, fechaIngreso));
 
         }
     }

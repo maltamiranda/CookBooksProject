@@ -40,7 +40,7 @@ namespace CookBooks.Deposito1
             baseDatos.inicilizar();
 
             baseDatos.modificarAutor(nombreBox.Text, apellidoBox.Text, nacionalidadBox.Text, id);
-            Autor autor = gestorAutores.buscarAutor(nombre, apellido, nacionalidad);
+            Autor autor = gestorAutores.buscarAutor(apellido);
             autor.modificarAutor(nombreBox.Text, apellidoBox.Text, nacionalidadBox.Text);
             parent.actualizarGridView();
             this.Close();

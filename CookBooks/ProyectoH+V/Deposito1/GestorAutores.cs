@@ -34,7 +34,7 @@ namespace CookBooks.Deposito1
             }
         }
 
-        public Autor buscarAutor(String nombre, String apellido, String nacionalidad)
+        public Autor buscarAutor(String apellido)
         {
             
             
@@ -42,7 +42,7 @@ namespace CookBooks.Deposito1
             foreach (Autor autor in Autores)
             {
                 
-                if (autor.getNombre() == nombre & autor.getApellido() == apellido & autor.getNacionalidad() == nacionalidad)
+                if (autor.getApellido() == apellido)
                 {
                     autorBuscado = autor;
                     

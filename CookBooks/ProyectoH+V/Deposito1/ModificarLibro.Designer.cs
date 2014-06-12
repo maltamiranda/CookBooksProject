@@ -40,6 +40,9 @@
             this.nombreBox = new System.Windows.Forms.TextBox();
             this.guardar = new System.Windows.Forms.Button();
             this.cancelar = new System.Windows.Forms.Button();
+            this.autor = new System.Windows.Forms.Label();
+            this.autorBox = new System.Windows.Forms.TextBox();
+            this.cambiarAutor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // editorialLabel
@@ -132,7 +135,7 @@
             this.guardar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guardar.Location = new System.Drawing.Point(163, 325);
+            this.guardar.Location = new System.Drawing.Point(217, 300);
             this.guardar.Name = "guardar";
             this.guardar.Size = new System.Drawing.Size(123, 23);
             this.guardar.TabIndex = 24;
@@ -145,7 +148,7 @@
             this.cancelar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelar.Location = new System.Drawing.Point(318, 325);
+            this.cancelar.Location = new System.Drawing.Point(372, 300);
             this.cancelar.Name = "cancelar";
             this.cancelar.Size = new System.Drawing.Size(83, 23);
             this.cancelar.TabIndex = 25;
@@ -153,12 +156,45 @@
             this.cancelar.UseVisualStyleBackColor = false;
             this.cancelar.Click += new System.EventHandler(this.cancelar_Click);
             // 
+            // autor
+            // 
+            this.autor.AutoSize = true;
+            this.autor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autor.Location = new System.Drawing.Point(83, 221);
+            this.autor.Name = "autor";
+            this.autor.Size = new System.Drawing.Size(37, 13);
+            this.autor.TabIndex = 26;
+            this.autor.Text = "Autor";
+            // 
+            // autorBox
+            // 
+            this.autorBox.Location = new System.Drawing.Point(170, 218);
+            this.autorBox.Name = "autorBox";
+            this.autorBox.Size = new System.Drawing.Size(116, 20);
+            this.autorBox.TabIndex = 27;
+            // 
+            // cambiarAutor
+            // 
+            this.cambiarAutor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cambiarAutor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cambiarAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cambiarAutor.Location = new System.Drawing.Point(305, 216);
+            this.cambiarAutor.Name = "cambiarAutor";
+            this.cambiarAutor.Size = new System.Drawing.Size(123, 23);
+            this.cambiarAutor.TabIndex = 28;
+            this.cambiarAutor.Text = "Seleccionar Autor";
+            this.cambiarAutor.UseVisualStyleBackColor = false;
+            this.cambiarAutor.Click += new System.EventHandler(this.cambiarAutor_Click);
+            // 
             // ModificarLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(422, 370);
+            this.ClientSize = new System.Drawing.Size(480, 341);
+            this.Controls.Add(this.cambiarAutor);
+            this.Controls.Add(this.autorBox);
+            this.Controls.Add(this.autor);
             this.Controls.Add(this.cancelar);
             this.Controls.Add(this.guardar);
             this.Controls.Add(this.editorialLabel);
@@ -193,5 +229,8 @@
         private System.Windows.Forms.TextBox nombreBox;
         private System.Windows.Forms.Button guardar;
         private System.Windows.Forms.Button cancelar;
+        private System.Windows.Forms.Label autor;
+        private System.Windows.Forms.TextBox autorBox;
+        private System.Windows.Forms.Button cambiarAutor;
     }
 }

@@ -60,7 +60,7 @@ namespace CookBooks.Deposito1
             id = conexionBase.obteneridAutor(nombre, apellido, nacionalidad);
 
 
-            autor = gestorAutores.buscarAutor(nombre, apellido, nacionalidad);
+            autor = gestorAutores.buscarAutor(apellido);
             
 
             //EditarAutor editarAutor = 
