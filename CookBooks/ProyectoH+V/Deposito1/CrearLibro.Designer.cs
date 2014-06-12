@@ -39,7 +39,8 @@
             this.aceptar = new System.Windows.Forms.Button();
             this.editorialLabel = new System.Windows.Forms.Label();
             this.editorialBox = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            //this.agregarAutores = new System.Windows.Forms.Button();
+            this.crearAutor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nombreBox
@@ -142,14 +143,32 @@
             this.editorialBox.Size = new System.Drawing.Size(116, 20);
             this.editorialBox.TabIndex = 12;
             // 
-            // comboBox1
+            // agregarAutores
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(136, 204);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 14;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            /*
+            this.agregarAutores.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.agregarAutores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agregarAutores.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agregarAutores.Location = new System.Drawing.Point(136, 225);
+            this.agregarAutores.Name = "agregarAutores";
+            this.agregarAutores.Size = new System.Drawing.Size(116, 23);
+            this.agregarAutores.TabIndex = 14;
+            this.agregarAutores.Text = "Agregar Autores";
+            this.agregarAutores.UseVisualStyleBackColor = false;
+            // 
+             */
+            // crearAutor
+            // 
+            this.crearAutor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.crearAutor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.crearAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.crearAutor.Location = new System.Drawing.Point(136, 272);
+            this.crearAutor.Name = "crearAutor";
+            this.crearAutor.Size = new System.Drawing.Size(116, 23);
+            this.crearAutor.TabIndex = 15;
+            this.crearAutor.Text = "CrearAutor";
+            this.crearAutor.UseVisualStyleBackColor = false;
+            this.crearAutor.Click += new System.EventHandler(this.crearAutor_Click);
             // 
             // CrearLibro
             // 
@@ -157,7 +176,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(391, 384);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.crearAutor);
+            //this.Controls.Add(this.agregarAutores);
             this.Controls.Add(this.editorialLabel);
             this.Controls.Add(this.editorialBox);
             this.Controls.Add(this.aceptar);
@@ -191,7 +211,7 @@
         private System.Windows.Forms.Button aceptar;
         private System.Windows.Forms.Label editorialLabel;
         private System.Windows.Forms.TextBox editorialBox;
-        private System.Windows.Forms.ComboBox comboBox1;
         //private System.Windows.Forms.Button agregarAutores;
+        private System.Windows.Forms.Button crearAutor;
     }
 }

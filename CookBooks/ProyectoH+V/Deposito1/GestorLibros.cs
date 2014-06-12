@@ -10,6 +10,7 @@ namespace CookBooks.Deposito1
     {
         public List<Libro> Libros = new List<Libro>();
         public List<Libro> LibrosBuscados = new List<Libro>();
+        private Libro libroBuscado;
 
         public List<Libro> getLibros()
         {
@@ -22,17 +23,18 @@ namespace CookBooks.Deposito1
         }
 
 
-        public List<Libro> buscarLibros(String nombre)
+        public Libro buscarLibro(String nombre)
         {
-            LibrosBuscados.Clear();
+            //LibrosBuscados.Clear();
             foreach (Libro libro in Libros)
             {
                 if (libro.nombre == nombre)
                 {
-                    LibrosBuscados.Add(libro);
+                    libroBuscado = libro;
+                    //LibrosBuscados.Add(libro);
                 }
             }
-            return LibrosBuscados;
+            return libroBuscado;
         }
 
         public void eliminarLibro(String nombre)

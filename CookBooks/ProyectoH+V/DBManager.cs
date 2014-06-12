@@ -295,6 +295,13 @@ namespace CookBooks
             this.ejecutarQuery(Query);
         }
 
+        public void modificarLibro(String nombre, String tema, String editorial, int precio, int cantidad, int id)
+        {
+            String Query = "UPDATE `cookbooks`.`libros` SET `nombre`= '" + nombre + "',`tema`='" + tema + "',`editorial`='" + editorial + "',`precio`=" + precio + ",`cantidad`=" + cantidad + " WHERE `idlibros` =" + id + ";";
+            this.ejecutarQuery(Query);
+
+        }
+
 
         /*public void reservarButaca(int id_butaca, int reserva_id, int id_sala)
         {

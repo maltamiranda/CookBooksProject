@@ -25,7 +25,14 @@ namespace CookBooks.Deposito1
             this.fecha_ingreso = fecha_ingreso;
         }
 
-
+        public void modificarLibro(String nombre, String tema, String editorial, int precio, int cantidad) 
+        {
+            this.nombre = nombre;
+            this.tema = tema;
+            this.editorial = editorial;
+            this.precio = precio;
+            this.cantidad = cantidad;
+        }
 
         public void agregarCantidad(int cant) 
         {

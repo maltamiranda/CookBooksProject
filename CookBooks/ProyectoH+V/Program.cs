@@ -19,7 +19,6 @@ namespace CookBooks
             DBManager cargar = new DBManager(gestorLibros,gestorAutores);
             cargar.inicilizar();
             cargar.cargarLibros();
-            cargar.cargarAutores();
             DateTime fecha = DateTime.Now;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
