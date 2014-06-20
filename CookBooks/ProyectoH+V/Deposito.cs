@@ -30,9 +30,7 @@ namespace CookBooks
             new CrearLibro(gestorLibros, this, gestorAutores).Show();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
+
 
         private void actualizar_Click(object sender, EventArgs e)
         {
@@ -121,9 +119,7 @@ namespace CookBooks
             precio = libro.getPrecio();
             cantidad = libro.getCantidad();
 
-            ModificarLibro modificarLibro = new ModificarLibro(gestorLibros, gestorAutores, libro, this, id);
-            modificarLibro.mostrarDatos(celda, tema, editorial, precio, cantidad);
-            modificarLibro.Show();
+           
         }
 
         private void nuevoAutorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -134,6 +130,35 @@ namespace CookBooks
         private void modificarAutorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ModificarAutor(gestorAutores, gestorLibros, this).Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String tema;
+            //String autor;
+            String editorial;
+            int precio;
+            int cantidad;
+            int id;
+            Libro libro;
+
+            String celda = (String)dataGridView1.CurrentRow.Cells["Nombre"].Value;
+
+            DBManager conexionBase = new DBManager(gestorLibros, gestorAutores);
+            conexionBase.inicilizar();
+            id = conexionBase.obteneridLibro("'" + celda + "'");
+            /*tema = conexionBase.obtenerTemaLibro(id);
+            editorial = conexionBase.obtenerEditorialLibro(id);
+            precio = conexionBase.obtenerPrecioLibro(id);
+            cantidad = conexionBase.obtenerCantidadLibro(id);*/
+
+            libro = gestorLibros.buscarLibro(celda);
+            tema = libro.getTema();
+            editorial = libro.getEditorial();
+            precio = libro.getPrecio();
+            cantidad = libro.getCantidad();
+
+           
         }
     }
 }

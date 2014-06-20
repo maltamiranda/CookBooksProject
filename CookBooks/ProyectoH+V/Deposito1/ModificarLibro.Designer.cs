@@ -40,8 +40,6 @@
             this.nombreBox = new System.Windows.Forms.TextBox();
             this.guardar = new System.Windows.Forms.Button();
             this.cancelar = new System.Windows.Forms.Button();
-            this.autor = new System.Windows.Forms.Label();
-            this.autorBox = new System.Windows.Forms.TextBox();
             this.cambiarAutor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -49,26 +47,29 @@
             // 
             this.editorialLabel.AutoSize = true;
             this.editorialLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editorialLabel.Location = new System.Drawing.Point(83, 107);
+            this.editorialLabel.Location = new System.Drawing.Point(111, 132);
+            this.editorialLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.editorialLabel.Name = "editorialLabel";
-            this.editorialLabel.Size = new System.Drawing.Size(53, 13);
+            this.editorialLabel.Size = new System.Drawing.Size(70, 18);
             this.editorialLabel.TabIndex = 23;
             this.editorialLabel.Text = "Editorial";
             // 
             // editorialBox
             // 
-            this.editorialBox.Location = new System.Drawing.Point(170, 104);
+            this.editorialBox.Location = new System.Drawing.Point(227, 128);
+            this.editorialBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editorialBox.Name = "editorialBox";
-            this.editorialBox.Size = new System.Drawing.Size(116, 20);
+            this.editorialBox.Size = new System.Drawing.Size(153, 22);
             this.editorialBox.TabIndex = 22;
             // 
             // temaLabel
             // 
             this.temaLabel.AutoSize = true;
             this.temaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temaLabel.Location = new System.Drawing.Point(83, 68);
+            this.temaLabel.Location = new System.Drawing.Point(111, 84);
+            this.temaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.temaLabel.Name = "temaLabel";
-            this.temaLabel.Size = new System.Drawing.Size(38, 13);
+            this.temaLabel.Size = new System.Drawing.Size(50, 18);
             this.temaLabel.TabIndex = 21;
             this.temaLabel.Text = "Tema";
             // 
@@ -76,9 +77,10 @@
             // 
             this.precioLabel.AutoSize = true;
             this.precioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioLabel.Location = new System.Drawing.Point(83, 146);
+            this.precioLabel.Location = new System.Drawing.Point(111, 180);
+            this.precioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.precioLabel.Name = "precioLabel";
-            this.precioLabel.Size = new System.Drawing.Size(43, 13);
+            this.precioLabel.Size = new System.Drawing.Size(57, 18);
             this.precioLabel.TabIndex = 20;
             this.precioLabel.Text = "Precio";
             // 
@@ -86,9 +88,10 @@
             // 
             this.cantidadLabel.AutoSize = true;
             this.cantidadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantidadLabel.Location = new System.Drawing.Point(83, 185);
+            this.cantidadLabel.Location = new System.Drawing.Point(111, 228);
+            this.cantidadLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cantidadLabel.Name = "cantidadLabel";
-            this.cantidadLabel.Size = new System.Drawing.Size(57, 13);
+            this.cantidadLabel.Size = new System.Drawing.Size(74, 18);
             this.cantidadLabel.TabIndex = 19;
             this.cantidadLabel.Text = "Cantidad";
             // 
@@ -96,38 +99,43 @@
             // 
             this.nombreLabel.AutoSize = true;
             this.nombreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreLabel.Location = new System.Drawing.Point(83, 30);
+            this.nombreLabel.Location = new System.Drawing.Point(111, 37);
+            this.nombreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nombreLabel.Name = "nombreLabel";
-            this.nombreLabel.Size = new System.Drawing.Size(50, 13);
+            this.nombreLabel.Size = new System.Drawing.Size(68, 18);
             this.nombreLabel.TabIndex = 18;
             this.nombreLabel.Text = "Nombre";
             // 
             // temaBox
             // 
-            this.temaBox.Location = new System.Drawing.Point(170, 65);
+            this.temaBox.Location = new System.Drawing.Point(227, 80);
+            this.temaBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.temaBox.Name = "temaBox";
-            this.temaBox.Size = new System.Drawing.Size(116, 20);
+            this.temaBox.Size = new System.Drawing.Size(153, 22);
             this.temaBox.TabIndex = 17;
             // 
             // precioBox
             // 
-            this.precioBox.Location = new System.Drawing.Point(170, 143);
+            this.precioBox.Location = new System.Drawing.Point(227, 176);
+            this.precioBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.precioBox.Name = "precioBox";
-            this.precioBox.Size = new System.Drawing.Size(116, 20);
+            this.precioBox.Size = new System.Drawing.Size(153, 22);
             this.precioBox.TabIndex = 16;
             // 
             // cantidadBox
             // 
-            this.cantidadBox.Location = new System.Drawing.Point(170, 182);
+            this.cantidadBox.Location = new System.Drawing.Point(227, 224);
+            this.cantidadBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cantidadBox.Name = "cantidadBox";
-            this.cantidadBox.Size = new System.Drawing.Size(116, 20);
+            this.cantidadBox.Size = new System.Drawing.Size(153, 22);
             this.cantidadBox.TabIndex = 15;
             // 
             // nombreBox
             // 
-            this.nombreBox.Location = new System.Drawing.Point(170, 27);
+            this.nombreBox.Location = new System.Drawing.Point(227, 33);
+            this.nombreBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nombreBox.Name = "nombreBox";
-            this.nombreBox.Size = new System.Drawing.Size(116, 20);
+            this.nombreBox.Size = new System.Drawing.Size(153, 22);
             this.nombreBox.TabIndex = 14;
             // 
             // guardar
@@ -135,9 +143,10 @@
             this.guardar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guardar.Location = new System.Drawing.Point(217, 300);
+            this.guardar.Location = new System.Drawing.Point(289, 369);
+            this.guardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guardar.Name = "guardar";
-            this.guardar.Size = new System.Drawing.Size(123, 23);
+            this.guardar.Size = new System.Drawing.Size(164, 28);
             this.guardar.TabIndex = 24;
             this.guardar.Text = "Guardar Cambios";
             this.guardar.UseVisualStyleBackColor = false;
@@ -148,53 +157,36 @@
             this.cancelar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelar.Location = new System.Drawing.Point(372, 300);
+            this.cancelar.Location = new System.Drawing.Point(496, 369);
+            this.cancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cancelar.Name = "cancelar";
-            this.cancelar.Size = new System.Drawing.Size(83, 23);
+            this.cancelar.Size = new System.Drawing.Size(111, 28);
             this.cancelar.TabIndex = 25;
             this.cancelar.Text = "Cancelar";
             this.cancelar.UseVisualStyleBackColor = false;
             this.cancelar.Click += new System.EventHandler(this.cancelar_Click);
-            // 
-            // autor
-            // 
-            this.autor.AutoSize = true;
-            this.autor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autor.Location = new System.Drawing.Point(83, 221);
-            this.autor.Name = "autor";
-            this.autor.Size = new System.Drawing.Size(37, 13);
-            this.autor.TabIndex = 26;
-            this.autor.Text = "Autor";
-            // 
-            // autorBox
-            // 
-            this.autorBox.Location = new System.Drawing.Point(170, 218);
-            this.autorBox.Name = "autorBox";
-            this.autorBox.Size = new System.Drawing.Size(116, 20);
-            this.autorBox.TabIndex = 27;
             // 
             // cambiarAutor
             // 
             this.cambiarAutor.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cambiarAutor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cambiarAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cambiarAutor.Location = new System.Drawing.Point(305, 216);
+            this.cambiarAutor.Location = new System.Drawing.Point(227, 266);
+            this.cambiarAutor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cambiarAutor.Name = "cambiarAutor";
-            this.cambiarAutor.Size = new System.Drawing.Size(123, 23);
+            this.cambiarAutor.Size = new System.Drawing.Size(164, 28);
             this.cambiarAutor.TabIndex = 28;
-            this.cambiarAutor.Text = "Seleccionar Autor";
+            this.cambiarAutor.Text = "Asignar Autor";
             this.cambiarAutor.UseVisualStyleBackColor = false;
             this.cambiarAutor.Click += new System.EventHandler(this.cambiarAutor_Click);
             // 
             // ModificarLibro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(480, 341);
+            this.ClientSize = new System.Drawing.Size(640, 420);
             this.Controls.Add(this.cambiarAutor);
-            this.Controls.Add(this.autorBox);
-            this.Controls.Add(this.autor);
             this.Controls.Add(this.cancelar);
             this.Controls.Add(this.guardar);
             this.Controls.Add(this.editorialLabel);
@@ -207,6 +199,7 @@
             this.Controls.Add(this.precioBox);
             this.Controls.Add(this.cantidadBox);
             this.Controls.Add(this.nombreBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ModificarLibro";
             this.Text = "ModificarLibro";
             this.Load += new System.EventHandler(this.ModificarLibro_Load);
@@ -229,8 +222,6 @@
         private System.Windows.Forms.TextBox nombreBox;
         private System.Windows.Forms.Button guardar;
         private System.Windows.Forms.Button cancelar;
-        private System.Windows.Forms.Label autor;
-        private System.Windows.Forms.TextBox autorBox;
         private System.Windows.Forms.Button cambiarAutor;
     }
 }

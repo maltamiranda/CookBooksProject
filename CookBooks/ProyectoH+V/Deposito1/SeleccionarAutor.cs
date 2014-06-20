@@ -13,6 +13,7 @@ namespace CookBooks.Deposito1
     {
         GestorAutores gestorAutores;
         ModificarLibro modificarLibro;
+        List<int> idAutores = new List<int>();
 
         public SeleccionarAutor(GestorAutores gestorAutores, ModificarLibro modificarLibro)
         {
@@ -26,11 +27,13 @@ namespace CookBooks.Deposito1
         {
             List<Autor> autores = gestorAutores.getAutores();
             List<String> apellidoAutores = new List<string>();
+            
             comboBox1.Items.Clear();
 
             foreach (Autor autor in autores) 
             {
                 apellidoAutores.Add(autor.getApellido());
+                idAutores.Add(autor.getId());
             }
 
             comboBox1.DataSource = apellidoAutores;
@@ -45,7 +48,19 @@ namespace CookBooks.Deposito1
         private void aceptar_Click(object sender, EventArgs e)
         {
             String autor = comboBox1.SelectedItem.ToString();
+            int indice = comboBox1.SelectedIndex;
             modificarLibro.setAutor(autor);
+            //Agregamos el autor y el libro a la tabla.
+            //Obtengo el id del libro
+            int idLibro=modificarLibro.getIdLibro();
+            int idAutor = idAutores[indice];
+
+            DBManager bd = new DBManager(modificarLibro.getGestorLibros(),modificarLibro.getGestorAutores());
+            bd.inicilizar();
+            bd.autorLibro(idAutor,idLibro);
+           // bd.close();
+
+
             this.Close();
         }
 

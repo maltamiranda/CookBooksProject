@@ -38,9 +38,15 @@ namespace CookBooks.Deposito1
             //Llamar al gestor de autores
             if (nombreBox.Text != "" & apellidoBox.Text != "" & nacionalidadBox.Text != "")
             {
-                gestorAutores.crearAutor(nombre, apellido, nacionalidad);
-
+                //Creo el autor en la Base de datos.
                 baseDatos.crearAutor(nombre, apellido, nacionalidad);
+                //Obtengo el id que le tocó
+
+                int id = baseDatos.getProximoIdAutor();
+                //Lo guardo en el gestor.
+                gestorAutores.crearAutor(nombre, apellido, nacionalidad,id);
+
+                //baseDatos.crearAutor(nombre, apellido, nacionalidad);
 
                 deposito.actualizarFilas();
                 this.Close();

@@ -27,6 +27,12 @@ namespace CookBooks.Deposito1
             this.id = id;
         }
 
+        public int getIdLibro(){
+        return this.id;
+        }
+
+        public GestorLibros getGestorLibros() { return gestorLibros;}
+
         private void ModificarLibro_Load(object sender, EventArgs e)
         {
 
@@ -43,13 +49,13 @@ namespace CookBooks.Deposito1
 
         public void setAutor(String autor) 
         {
-            autorBox.Text = autor;
+           // autorBox.Text = autor;
         }
 
         private void guardar_Click(object sender, EventArgs e)
         {
             String nombre = nombreBox.Text;
-            String autor = autorBox.Text;
+           // String autor = autorBox.Text;
             String tema = temaBox.Text;
             String editorial = editorialBox.Text;
             int precio = int.Parse(precioBox.Text);
@@ -60,8 +66,8 @@ namespace CookBooks.Deposito1
 
             baseDatos.modificarLibro(nombre, tema, editorial, precio, cantidad, id);
 
-            Autor objetoAutor = gestorAutores.buscarAutor(autor);
-            libro.modificarLibro(nombre, tema, objetoAutor, editorial, precio, cantidad);
+            //Autor objetoAutor = gestorAutores.buscarAutor(autor);
+            libro.modificarLibro(nombre, tema,  editorial, precio, cantidad);
 
             this.Close();
 
@@ -76,6 +82,9 @@ namespace CookBooks.Deposito1
         private void cambiarAutor_Click(object sender, EventArgs e)
         {
             new SeleccionarAutor(gestorAutores, this).Show();
+        }
+        public GestorAutores getGestorAutores() {
+            return this.gestorAutores;
         }
     }
 }

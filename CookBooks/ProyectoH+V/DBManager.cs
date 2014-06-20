@@ -40,6 +40,13 @@ namespace CookBooks
 
 
 
+        public void autorLibro(int idAutor, int idLibro) {
+
+            String Query = "INSERT INTO `cookbooks`.`libro_autor` (`idautor`, `idlibro`, `idlibro_autor`) VALUES ("+idAutor+","+idLibro+",null)" ;
+            this.ejecutarQuery(Query);
+        
+        }
+
         public DBManager(GestorAutores gestorAutores)
         {
             this.gestorAutores = gestorAutores;
@@ -67,7 +74,7 @@ namespace CookBooks
             List<int> totalIdLibros = obtenerIdLibros();
             foreach (int id in totalIdLibros)
             {
-                gestorLibros.crearLibro(obtenerNombreLibro(id), obtenerTemaLibro(id), new Autor("","",""), obtenerEditorialLibro(id), obtenerPrecioLibro(id), obtenerCantidadLibro(id), obtenerFechaIngreso(id));
+                gestorLibros.crearLibro(obtenerNombreLibro(id), obtenerTemaLibro(id), new Autor("","","",0), obtenerEditorialLibro(id), obtenerPrecioLibro(id), obtenerCantidadLibro(id), obtenerFechaIngreso(id));
             }
         }
 
@@ -76,7 +83,7 @@ namespace CookBooks
             List<int> totalIdAutores = obtenerIdAutores();
             foreach (int id in totalIdAutores)
             {
-                gestorAutores.crearAutor(obtenerNombreAutor(id), obtenerApellidoAutor(id), obtenerNacionalidadAutor(id));
+                gestorAutores.crearAutor(obtenerNombreAutor(id), obtenerApellidoAutor(id), obtenerNacionalidadAutor(id),id);
             }
         }
 
@@ -161,7 +168,22 @@ namespace CookBooks
         public void crearLibro(String nombre, String tema, String editorial, int precio, int cantidad, DateTime fechaIngreso)
         {
             String Query = "INSERT INTO `cookbooks`.`libros` (`idlibros`, `nombre`, `tema`, `editorial`, `precio`, `cantidad`, `fecha_ingreso`) VALUES (null,'" + nombre + "','" + tema + "','" + editorial + "','" + precio + "','" + cantidad + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm") + "')";
-            this.ejecutarQuery(Query);    
+            this.ejecutarQuery(Query);
+
+    
+        }
+
+
+        public int getProximoIdAutor() {
+            String Query = "Select max(id) from autores";
+            conexion.Open();
+            MySqlCommand cmd = new MySqlCommand(Query, conexion);
+            rdr = cmd.ExecuteReader();
+            int proximoId = rdr.GetInt32(0)+1;
+            return proximoId;
+
+
+        
         }
 
         public void crearAutor(String nombre, String apellido, String nacionalidad)
@@ -424,6 +446,10 @@ namespace CookBooks
             comando.ExecuteNonQuery();
             conexion.Close();
         }
+
+
+
+
 
 
     }

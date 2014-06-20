@@ -62,7 +62,7 @@ namespace CookBooks.Deposito1
 
             if (nombreBox.Text != "" & temaBox.Text != "" & editorialBox.Text != "" & cantidadBox.Text != "" & precioBox.Text != "")
             {
-               gestorLibros.crearLibro(nombre, tema, new Autor("","",""), editorial, precio, cantidad);
+               gestorLibros.crearLibro(nombre, tema, new Autor("","","",0), editorial, precio, cantidad);
 
                baseDatos.crearLibro(nombre, tema, editorial, precio, cantidad, DateTime.Now);
 

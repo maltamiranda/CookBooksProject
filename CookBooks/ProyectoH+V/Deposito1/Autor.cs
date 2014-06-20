@@ -10,12 +10,18 @@ namespace CookBooks.Deposito1
         private String nombre;
         private String apellido;
         private String nacionalidad;
+        private int id;
 
-        public Autor(String nombre, String apellido, String nacionalidad) 
+        public Autor(String nombre, String apellido, String nacionalidad, int id) 
         {
             this.nombre = nombre;
             this.apellido = apellido;
             this.nacionalidad = nacionalidad;
+            this.id = id;
+        }
+
+        public int getId() {
+            return id;
         }
 
         public void modificarAutor(String nombre, String apellido, String nacionalidad)

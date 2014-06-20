@@ -91,10 +91,10 @@ namespace CookBooks.Deposito1
          * 
          * /**/
         
-        public void crearAutor(String nombre, String apellido, String nacionalidad)
+        public void crearAutor(String nombre, String apellido, String nacionalidad,int id)
         {
             //DateTime vencimiento = new DateTime(2014, 12, 4);
-            Autores.Add(new Autor(nombre, apellido, nacionalidad));
+            Autores.Add(new Autor(nombre, apellido, nacionalidad,id));
 
         }
          
