@@ -23,6 +23,22 @@ namespace CookBooks
             this.gestorLibros = gestorLibros;
             this.gestorAutores = gestorAutores;
             this.actualizarFilas();
+            this.cargarComboBox();
+        }
+
+        public void cargarComboBox()
+        {
+            List<Autor> autoresInternos = gestorAutores.getAutores();
+            autoresBox.Items.Clear();
+
+
+            if (autoresInternos != null)
+            {
+                foreach (Autor autor in autoresInternos)
+                {
+                    autoresBox.Items.Add(autor.getApellido());
+                }
+            }
         }
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -160,5 +176,56 @@ namespace CookBooks
 
            
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String titulo, autor, editorial;
+            dataGridView1.BringToFront();
+            dataGridView1.Show();
+            DBManager db = new DBManager(gestorLibros, gestorAutores);
+            db.inicilizar();
+            if (tituloBox.Text == "")
+            {
+                titulo = "%";
+            }
+            else
+            {
+                titulo = tituloBox.Text;
+            }
+            if (autoresBox.Text == "")
+            {
+                autor = "%";
+            }
+            else
+            {
+                autor = autoresBox.Text;
+            }
+            if (editorialBox.Text == "")
+            {
+                editorial = "%";
+            }
+            else
+            {
+                editorial = editorialBox.Text;
+            }
+            List<int> idValidos = db.buscarLibro(titulo, editorial, autor);
+            List<Libro> librosInternos = gestorLibros.getLibros();
+            dataGridView1.Rows.Clear();
+
+
+            if (idValidos.Count != 0)
+            {
+                for (int i = 0; i < idValidos.Count; i++)
+                {
+                    dataGridView1.Rows.Add(db.obtenerNombreAutor(idValidos[i]), 
+                        db.obtenerTemaLibro(idValidos[i]));
+                }
+            }
+            else
+            {
+                new busquedaFallida().Show();
+            }
+        }
+
     }
 }

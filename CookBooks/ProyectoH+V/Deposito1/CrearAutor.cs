@@ -49,6 +49,7 @@ namespace CookBooks.Deposito1
                 //baseDatos.crearAutor(nombre, apellido, nacionalidad);
 
                 deposito.actualizarFilas();
+                deposito.cargarComboBox();
                 this.Close();
             }
             

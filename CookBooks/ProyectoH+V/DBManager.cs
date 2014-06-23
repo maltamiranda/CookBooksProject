@@ -12,7 +12,7 @@ using CookBooks.Deposito1;
 
 namespace CookBooks
 {
-    class DBManager
+    public class DBManager
     {
         MySqlConnection conexion;
         String servidor = "localhost";
@@ -175,11 +175,20 @@ namespace CookBooks
 
 
         public int getProximoIdAutor() {
-            String Query = "Select max(id) from autores";
+            String Query = "Select max(idautor) from autores";
             conexion.Open();
+            int proximoId;
             MySqlCommand cmd = new MySqlCommand(Query, conexion);
             rdr = cmd.ExecuteReader();
-            int proximoId = rdr.GetInt32(0)+1;
+            if (rdr.Read())
+            {
+                proximoId = rdr.GetInt32(0)+1;
+            }
+            else
+            {
+                proximoId = 1;
+            }
+            
             return proximoId;
 
 
@@ -353,92 +362,6 @@ namespace CookBooks
             this.ejecutarQuery(Query);
         }
 
-
-        /*public void reservarButaca(int id_butaca, int reserva_id, int id_sala)
-        {
-            String Query = "INSERT INTO `sistema_cine`.`reserva_detalle`( `butaca_id`,`reserva_id`, `sala_id`) VALUES (" + id_butaca + "," + reserva_id + "," + id_sala + ")";
-            this.ejecutarQuery(Query);
-
-        }
-
-        public void desreservarButaca(int id_butaca, int id_reserva)
-        {
-            String Query = "DELETE FROM `sistema_cine`.`reserva_detalle` WHERE `butaca_id` = " + id_butaca + ";";
-            this.ejecutarQuery(Query);
-            String Query2 = "UPDATE `sistema_cine`.`reservas` SET `estado`= 'cancelado' WHERE `reserva_id` =" + id_reserva + ";";
-            this.ejecutarQuery(Query2);
-
-        }
-
-        public string obtenerSala(int idsala)
-        {
-            String Query = "SELECT `nombre` FROM `sistema_cine`.`sala` WHERE sala_id= " + idsala + ";";
-            conexion.Open();
-            MySqlCommand cmd = new MySqlCommand(Query, conexion);
-            rdr = cmd.ExecuteReader();
-            while (rdr.Read())
-            {
-                salanombre = rdr.GetString(0);
-            }
-            conexion.Close();
-            return salanombre;
-        }
-
-        /*
-         * FALTA ID PELICULA, SALA, CLIENTE 
-         * *
-        public void generarReserva(string codigo)
-        {
-            String Query_reserva = "INSERT INTO sistema_cine.Reservas(`cod_reserva`,`estado`)VALUES(" + "'" + codigo + "'" + ",'activo')";
-            this.ejecutarQuery(Query_reserva);
-
-
-        }
-        public int obteneridReserva()
-        {
-            String Query_last_id = "SELECT `reserva_id` FROM `sistema_cine`.`Reservas` ORDER BY `reserva_id` DESC LIMIT 1";
-            conexion.Open();
-            MySqlCommand cmd = new MySqlCommand(Query_last_id, conexion);
-            rdr = cmd.ExecuteReader();
-            while (rdr.Read())
-            {
-                last_id = rdr.GetInt32(0);
-            }
-            last_id = last_id + 1;
-            conexion.Close();
-            return last_id;
-
-
-        }
-        public int obteneridcodigoreserva(string codigoreserva)
-        {
-            String Query = "SELECT `reserva_id` FROM `sistema_cine`.`reservas` WHERE `cod_reserva`=" + "'" + codigoreserva + "'" + ";";
-            conexion.Open();
-            MySqlCommand cmd = new MySqlCommand(Query, conexion);
-            rdr = cmd.ExecuteReader();
-            while (rdr.Read())
-            {
-                id_res = rdr.GetInt32(0);
-            }
-            conexion.Close();
-            return id_res;
-        }
-        public List<int> obtenerbutacas(int idreserva)
-        {
-            List<int> but = new List<int>();
-            String Query = "SELECT `butaca_id` FROM `sistema_cine`.`reserva_detalle` WHERE `reserva_id`=" + idreserva + ";";
-            conexion.Open();
-            MySqlCommand cmd = new MySqlCommand(Query, conexion);
-            rdr = cmd.ExecuteReader();
-            while (rdr.Read())
-            {
-                but.Add(rdr.GetInt32(0));
-            }
-            conexion.Close();
-            return but;
-        }*/
-
-
         public void ejecutarQuery(String Query)
         {
             conexion.Open();
@@ -447,10 +370,44 @@ namespace CookBooks
             conexion.Close();
         }
 
+        public bool logInValidation(String user, String pw)
+        {
+            
+            conexion.Open();
 
 
+            bool valido;
+            String Query = "SELECT * FROM usuarios WHERE " +
+                    "user='" + user + "' AND pw='" + pw + "';";
+            MySqlCommand cmd = new MySqlCommand(Query, conexion);
+            rdr = cmd.ExecuteReader();
+            valido = rdr.Read();
+            
+            conexion.Close();
+            return valido;
+        }
 
+        public List<int> buscarLibro(String nombre, String editorial, String autor)
+        {
+            List<int> but = new List<int>();
+            String query = "SELECT l.idlibros " +
+                "FROM autores a, libro_autor la, libros l " +
+                "WHERE a.apellido like '" + autor + "' " +
+                "AND l.editorial like '" + editorial + "' "+
+                "AND l.nombre like '" + nombre + "' "+
+                "AND  a.idautor = la.idAutor " +
+                "AND  la.idLibro = l.idLibros ";
+            conexion.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conexion);
+            rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                but.Add(rdr.GetInt32(0));
+            }
+            conexion.Close();
+            return but;
+        }
 
-
+        
     }
 }

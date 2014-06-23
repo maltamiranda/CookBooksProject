@@ -14,6 +14,7 @@ namespace CookBooks
     {
         GestorLibros gestorProducto;
         GestorAutores gestorAutores;
+        Deposito deposito;
 
         public Form1(GestorLibros gestorProducto, GestorAutores gestorAutores)
         {
@@ -26,7 +27,8 @@ namespace CookBooks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AddFormInPanel(new Deposito(gestorProducto,gestorAutores));
+            deposito = new Deposito(gestorProducto, gestorAutores);
+            AddFormInPanel(deposito);
         }
 
         private void AddFormInPanel(object formHijo)
@@ -49,7 +51,26 @@ namespace CookBooks
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (button2.Text == "Cerrar Sesion")
+            {
+                button2.Text = "Iniciar Sesion";
+                this.Text = "Cookbooks, bienvenido Anonimo";
+            }
+            else
+            {
+                new LogIn(gestorProducto, gestorAutores, deposito, this).Show();
+            }
+        }
+
+        public void sesionIniciada(String usuario)
+        {
+            button2.Text = "Cerrar Sesion";
+            this.Text = "Cookbooks, bienvenido " + usuario;
         }
     }
 }
