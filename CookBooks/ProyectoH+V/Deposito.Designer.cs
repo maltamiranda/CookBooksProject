@@ -78,7 +78,7 @@
             this.fechaIngreso});
             this.dataGridView1.Location = new System.Drawing.Point(144, 37);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1176, 612);
+            this.dataGridView1.Size = new System.Drawing.Size(1200, 612);
             this.dataGridView1.TabIndex = 1;
             // 
             // Nombre

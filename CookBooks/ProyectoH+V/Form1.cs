@@ -72,5 +72,10 @@ namespace CookBooks
             button2.Text = "Cerrar Sesion";
             this.Text = "Cookbooks, bienvenido " + usuario;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new CrearCuenta(gestorProducto, gestorAutores).Show();
+        }
     }
 }

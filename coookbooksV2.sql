@@ -74,3 +74,8 @@ CREATE TABLE libroCompra (
 	FOREIGN KEY (idCompra) REFERENCES compra (id),
 	FOREIGN KEY (idLibro) REFERENCES libros (idLibros)
 );
+
+INSERT into privilegios (nombre)
+VALUES ('admin');
+INSERT into privilegios (nombre)
+VALUES ('cliente');

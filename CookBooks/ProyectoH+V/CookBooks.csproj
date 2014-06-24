@@ -112,6 +112,12 @@
     <Compile Include="Deposito1\CrearAutor.Designer.cs">
       <DependentUpon>CrearAutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Deposito1\CrearCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposito1\CrearCuenta.Designer.cs">
+      <DependentUpon>CrearCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Deposito1\CrearLibro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Deposito1\CrearAutor.resx">
       <DependentUpon>CrearAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposito1\CrearCuenta.resx">
+      <DependentUpon>CrearCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Deposito1\CrearLibro.resx">
       <DependentUpon>CrearLibro.cs</DependentUpon>

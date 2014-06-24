@@ -408,6 +408,28 @@ namespace CookBooks
             return but;
         }
 
+        public void altaUsuario(String user, String pw, String mail, String direccion, int id)
+        {
+            String Query = "INSERT INTO usuarios (user, pw, mail,direccion, idPriv) " +
+                "VALUES ('" + user + "', '" + pw + "', '" + mail + "', '" + direccion + "', " + id + ")";
+            this.ejecutarQuery(Query);
+        }
+
+        public bool isUserValid(String user)
+        {
+            conexion.Open();
+
+
+            bool valido;
+            String Query = "SELECT * FROM usuarios WHERE " +
+                    "user='" + user + "'";
+            MySqlCommand cmd = new MySqlCommand(Query, conexion);
+            rdr = cmd.ExecuteReader();
+            valido = rdr.Read();
+
+            conexion.Close();
+            return !valido;
+        }
         
     }
 }

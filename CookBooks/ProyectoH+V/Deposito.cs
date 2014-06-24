@@ -219,7 +219,7 @@ namespace CookBooks
             {
                 for (int i = 0; i < idValidos.Count; i++)
                 {
-                    dataGridView1.Rows.Add(db.obtenerNombreAutor(idValidos[i]), 
+                    dataGridView1.Rows.Add(db.obtenerNombreLibro(idValidos[i]), 
                         db.obtenerTemaLibro(idValidos[i]));
                 }
             }
