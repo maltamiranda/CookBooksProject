@@ -25,6 +25,8 @@ namespace CookBooks.Deposito1
             this.libro = libro;
             this.deposito = deposito;
             this.id = id;
+
+            this.mostrarDatos(libro.getNombre(), libro.getTema(), libro.getEditorial(), libro.getPrecio(), libro.getCantidad());
         }
 
         public int getIdLibro(){

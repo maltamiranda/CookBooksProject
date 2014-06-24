@@ -181,3 +181,5 @@ C:\Users\Administrador\Desktop\CookBooksProyect3\CookBooksProject\CookBooks\Proy
 C:\Users\maltamiranda\Desktop\CookBooksProject-master\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.SeleccionarAutor.resources
 C:\Users\maltamiranda\Desktop\CookBooksProject-master\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.LogIn.resources
 C:\Users\maltamiranda\Desktop\CookBooksProject-master\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.busquedaFallida.resources
+C:\Users\Administrador\Desktop\CookBooksProyect3\CookBooksProject\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.busquedaFallida.resources
+C:\Users\Administrador\Desktop\CookBooksProyect3\CookBooksProject\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.LogIn.resources

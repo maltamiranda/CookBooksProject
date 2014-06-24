@@ -135,6 +135,8 @@ namespace CookBooks
             precio = libro.getPrecio();
             cantidad = libro.getCantidad();
 
+            new ModificarLibro(gestorLibros,gestorAutores,libro,this,id).Show();
+
            
         }
 
