@@ -102,6 +102,21 @@ namespace CookBooks
             return nombreAutor;
         }
 
+        public List<int> getIdAutores(int idLibro){
+            List<int> but = new List<int>();
+            String Query = "SELECT `idautor` FROM `libro_autor` where idlibro="+idLibro;
+            conexion.Open();
+            MySqlCommand cmd = new MySqlCommand(Query, conexion);
+            rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                but.Add(rdr.GetInt32(0));
+            }
+            conexion.Close();
+            return but;
+        
+        }
+
         public string obtenerApellidoAutor(int id_Autor)
         {
             String Query = "SELECT `apellido` FROM `autores` WHERE idautor= " + id_Autor + ";";
