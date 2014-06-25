@@ -1,7 +1,13 @@
 SRS - Aprobado - 22/05
 Entrevistas - Aprobado - 22/05
 Cuestionarios - Aprobado - 22/05
-PGP y Riesgos - No entregado
 
+--------------------------------------
+
+PGP-Tiene detalles menores - Aprobado
+
+Doc. Riesgo -  No entregado
+
+Documentos de Interface: La idea es que propongan un prototipo de la interface real (web), por ejemplo  hecho con alguna herramienta de las que vimos en la teoria 
 
 
