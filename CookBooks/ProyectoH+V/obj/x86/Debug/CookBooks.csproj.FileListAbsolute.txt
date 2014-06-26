@@ -208,3 +208,4 @@ C:\Users\maltamiranda\Desktop\Nueva carpeta\CookBooks\ProyectoH+V\obj\x86\Debug\
 C:\Users\maltamiranda\Desktop\Nueva carpeta\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.CrearCuenta.resources
 C:\Users\Administrador\Desktop\CookBooksProyect3\CookBooksProject\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.CrearCuenta.resources
 C:\Users\Administrador\Desktop\CookBooksProyect3\CookBooksProject\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.verAutores.resources
+C:\Users\Administrador\Desktop\CookBooksProyect3\CookBooksProject\CookBooks\ProyectoH+V\obj\x86\Debug\CookBooks.Deposito1.ComprarLibro.resources

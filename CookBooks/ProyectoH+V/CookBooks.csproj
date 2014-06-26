@@ -106,6 +106,12 @@
     <Compile Include="Deposito1\busquedaFallida.Designer.cs">
       <DependentUpon>busquedaFallida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Deposito1\ComprarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposito1\ComprarLibro.Designer.cs">
+      <DependentUpon>ComprarLibro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Deposito1\CrearAutor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Deposito1\busquedaFallida.resx">
       <DependentUpon>busquedaFallida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposito1\ComprarLibro.resx">
+      <DependentUpon>ComprarLibro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Deposito1\CrearAutor.resx">
       <DependentUpon>CrearAutor.cs</DependentUpon>

@@ -231,5 +231,35 @@ namespace CookBooks
             }
         }
 
+        private void botonComprar_Click(object sender, EventArgs e)
+        {
+            String tema;
+            //String autor;
+            String editorial;
+            int precio;
+            int cantidad;
+            int id;
+            Libro libro;
+
+            String celda = (String)dataGridView1.CurrentRow.Cells["Nombre"].Value;
+
+            DBManager conexionBase = new DBManager(gestorLibros, gestorAutores);
+            conexionBase.inicilizar();
+            id = conexionBase.obteneridLibro("'" + celda + "'");
+            /*tema = conexionBase.obtenerTemaLibro(id);
+            editorial = conexionBase.obtenerEditorialLibro(id);
+            precio = conexionBase.obtenerPrecioLibro(id);
+            cantidad = conexionBase.obtenerCantidadLibro(id);*/
+
+            libro = gestorLibros.buscarLibro(celda);
+            tema = libro.getTema();
+            editorial = libro.getEditorial();
+            precio = libro.getPrecio();
+            cantidad = libro.getCantidad();
+
+            new ComprarLibro(gestorLibros, gestorAutores, libro, this, id).Show();
+            
+        }
+
     }
 }
